@@ -1,4 +1,4 @@
-# srvem
+# srvem [![JSR](https://jsr.io/badges/@izz/srvem)](https://jsr.io/@izz/srvem)
 
 Yet another module to query valve-style game servers.
 
