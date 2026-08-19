@@ -3,6 +3,12 @@
  * 
  * Currently only supports the {@link https://developer.valvesoftware.com/wiki/Server_queries#A2S_INFO|A2S_INFO} query type.
  * 
+ * ```ts
+ * import { query } from "@izz/srvem";
+ * 
+ * const server = await query(example.com);
+ * console.log(server.name);
+ * ```
  * @module
  */
 
