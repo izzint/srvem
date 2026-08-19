@@ -74,7 +74,7 @@ const BASE_HEADER = new Uint8Array([
  * 
  * @returns A promise that resolves to server information
  */
-export async function Query(address: string,port: number = 27015,timeout: number = 2000,): Promise<ValveServer> {
+export async function query(address: string,port: number = 27015,timeout: number = 2000,): Promise<ValveServer> {
   const conn = Deno.listenDatagram({
     hostname: "0.0.0.0",
     port: 0,
