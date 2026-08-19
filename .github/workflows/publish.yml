@@ -22,3 +22,5 @@ jobs:
         run: deno publish
       - name: Release
         uses: softprops/action-gh-release@v3
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
