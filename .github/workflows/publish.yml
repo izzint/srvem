@@ -1,4 +1,4 @@
-name: publish
+name: Publish
 
 on:
   push:
@@ -12,8 +12,13 @@ jobs:
       contents: read
       id-token: write
     steps:
-      - uses: actions/checkout@v7
-      - uses: denoland/setup-deno@v2
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
         with:
           deno-version: latest
-      - run: deno publish
+      - name: Publish package
+        run: deno publish
+      - name: Release
+        uses: softprops/action-gh-release@v3
